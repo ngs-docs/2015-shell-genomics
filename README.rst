@@ -325,11 +325,11 @@ Looking within folders within folder within...
 
 Try entering::
 
-    cd data/hidden
+    cd data/.hidden
 
-and you will jump directly to ``hidden`` without having to go through
+and you will jump directly to ``.hidden`` without having to go through
 the intermediate directory.  Here, we're telling cd to go into 'data'
-first, and then 'hidden'.
+first, and then '.hidden'.
 
 Then do::
 
@@ -340,7 +340,7 @@ to go back up two levels.  (Try typing ``pwd`` to see where you are!)
 You could put more directories and a file
 on the end, too; for example, ::
 
-    ls data/hidden/tmp1/notit.txt
+    ls data/.hidden/tmp1/notit.txt
 
 You can do the same thing with any UNIX command that takes a file or
 directory name.
@@ -391,14 +391,14 @@ directory in ``home`` which is a directory in ``/``.
 
 Now enter the following command::
 
-    cd /home/username/data/hidden
+    cd /home/username/data/.hidden
 
-This jumps to ``hidden``. Now go back to the home directory (cd). We saw
+This jumps to ``.hidden``. Now go back to the home directory (cd). We saw
 earlier that the command::
 
-    cd data/hidden
+    cd data/.hidden
 
-had the same effect - it took us to the ``hidden`` directory. But,
+had the same effect - it took us to the ``.hidden`` directory. But,
 instead of specifying the full path
 (``/home/username/data``), we specified a *relative path*. In
 other words, we specified the path relative to our current
